@@ -13,7 +13,12 @@ namespace PetStore.Pets
         public int NumberOfKills { get; set; }
         public short Speed { get; set; }
 
-        private int _numberOfBites;
+        // FIELDS
+        // access modifier (generally private, info for inside the class that you don't want to share), type, name
+        // name is prefixed with an underscore & then camelCase
+        // works more like a variable, a class level variable
+        // don't have to include a private access modifier bc private is default 
+        int _numberOfBites;
         public void Bite(string handlerName)
         {
             _numberOfBites++;

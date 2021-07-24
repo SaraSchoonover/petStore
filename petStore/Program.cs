@@ -5,8 +5,10 @@ namespace PetStore
 {
     class Program
     {
+        //static means shared across all instances.
         static void Main(string[] args)
         {
+
             var melba = new Dog("Melba", 60, "Medium");
             //Console.WriteLine("Hello World!");
             //  melba.Name = "Melba";
@@ -25,23 +27,26 @@ namespace PetStore
             barley.Bark();
             barley.Eat("table scraps");
 
-            //object initializer
+            // object initializer
+            // allows to assign values to the fields or properties at the time of creating an object without invoking a constructor.
             var tiger = new Tiger
             {
                 Name = "Kisa",
                 NumberOfKills = 0,
                 Size = "Medium",
-        };
+            };
             tiger.Bite("Chris");
             tiger.Bite("Chris");
             tiger.Bite("Chris");
-            tiger.Bite("Chris"); 
+            tiger.Bite("Chris");
             tiger.Bite("Chris");
             tiger.Bite("Chris");
 
             var bear = new Bear("Yogi", "Brown");
             bear.EatFish(5);
-            bear.EatFish(5);
-        }
+            
+        
+
+    }
     }
 }
